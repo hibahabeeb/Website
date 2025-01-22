@@ -13,192 +13,131 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Header Section */
         header {
-            background-color: #333;
+            background-color: #1e2a47;
             color: #fff;
             text-align: center;
-            padding: 40px 0;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* About Section */
         section.about {
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
+            background-color: #fff;
+            color: #333;
+            animation: fadeInUp 1s ease-out;
         }
 
         section.about h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #1e2a47;
         }
 
         section.about p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 1.2rem;
             max-width: 900px;
             margin: 0 auto;
             color: #555;
+            line-height: 1.8;
         }
 
         /* Skills Section */
         section.skills {
-            background-color: #fff;
-            padding: 60px 20px;
+            background-color: #1e2a47;
+            color: #fff;
+            padding: 80px 20px;
             text-align: center;
         }
 
         section.skills h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #f0f8ff;
         }
 
         .skills-list {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out;
         }
 
         .skill {
-            background-color: #007BFF;
+            background-color: #00c9a7;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 30px;
-            font-size: 1rem;
-            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .skill:hover {
-            transform: scale(1.1);
+            transform: translateY(-5px);
+            background-color: #00b894;
         }
 
         /* Experience Section */
         section.experience {
-            padding: 60px 20px;
-            background-color: #f9f9f9;
+            padding: 80px 20px;
+            background-color: #f0f8ff;
             text-align: center;
+            animation: fadeInUp 1s ease-out;
         }
 
         section.experience h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 30px;
+            color: #1e2a47;
         }
 
         section.experience ul {
             list-style: none;
+            font-size: 1.2rem;
+            color: #555;
         }
 
         section.experience ul li {
-            font-size: 1.2rem;
             margin-bottom: 15px;
+            transition: transform 0.3s ease;
         }
 
-        /* Hackathon Section */
-        section.hackathon {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        section.hackathon h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            font-size: 1rem;
-        }
-
-        /* Mobile Responsiveness */
-        @media screen and (max-width: 768px) {
-            .skills-list {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            section.about p, section.experience ul li {
-                font-size: 1rem;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Hiba Habeeb</h1>
-        <p>BSc Psychology Student | Aspiring Web Developer | Creative Enthusiast</p>
-    </header>
-
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I am currently pursuing a degree in BSc Psychology at Malabar College of Advanced Studies, Vengara.
-            I am passionate about videography, photography, and editing, and am continuously learning web development.
-            I am interested in exploring various creative fields and finding innovative ways to merge my technical and artistic skills.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill">Web Development</div>
-            <div class="skill">Videography</div>
-            <div class="skill">Photography</div>
-            <div class="skill">Editing</div>
-            <div class="skill">Creative Thinking</div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Pursuing a degree in BSc Psychology at Malabar College of Advanced Studies.</li>
-            <li>Currently learning web development and enhancing technical skills.</li>
-            <li>Hands-on experience in videography, photography, and editing for personal projects.</li>
-        </ul>
-    </section>
-
-    <!-- Hackathon Section -->
-    <section class="hackathon">
-        <h2>Attending TinkerHER Hackathon</h2>
-        <p>I am currently participating in the TinkerHER Hackathon organized by TinkerHub, where I am collaborating with fellow enthusiasts to explore and create innovative solutions.</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Hiba Habeeb. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+        section.experience ul li:hover {
+            transform: translateX(10px);
+            color: #
+            
