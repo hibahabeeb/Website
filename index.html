@@ -139,5 +139,140 @@
 
         section.experience ul li:hover {
             transform: translateX(10px);
-            color: #
-            
+            color: #1e2a47;
+        }
+
+        /* Hackathon Section */
+        section.hackathon {
+            background-color: #00c9a7;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        section.hackathon h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #1e2a47;
+        }
+
+        /* Contact Section */
+        section.contact {
+            background-color: #1e2a47;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section.contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #f0f8ff;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .contact-info a {
+            color: #00c9a7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1e2a47;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section.about p, section.experience ul li {
+                font-size: 1rem;
+            }
+
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hiba Habeeb</h1>
+        <p>Aspiring Psychologist | Passionate About Videography & Video Editing</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am Hiba Habeeb, an aspiring psychologist currently pursuing my BSc in Psychology at Malabar College of Advanced Studies, Vengara. With a deep passion for videography and video editing, I am eager to explore and develop new skills. I am always keen to learn and delve into uncharted territories.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">Videography</div>
+            <div class="skill">Video Editing</div>
+            <div class="skill">Creative Thinking</div>
+            <div class="skill">Psychology</div>
+            <div class="skill">Communication</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Pursuing a degree in BSc Psychology at Malabar College of Advanced Studies.</li>
+            <li>Developing skills in videography and video editing through personal projects and learning.</li>
+            <li>Exploring innovative ways to merge psychology with creative fields like videography.</li>
+        </ul>
+    </section>
+
+    <!-- Hackathon Section -->
+    <section class="hackathon">
+        <h2>Hackathons & Events</h2>
+        <p>I am currently exploring new challenges, including hackathons and collaborations, to further develop my creative and technical skills.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Meet Me</h2>
+        <div class="contact-info">
+            <p>LinkedIn: <a href="https://in.linkedin.com/in/hiba-habeeb-av-a24649348" target="_blank">Check out Hiba Habeeb AV's profile on LinkedIn</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/hiba_habeeb_av/" target="_blank">Check out Hiba Habeeb AV's profile on Instagram</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Hiba Habeeb. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
