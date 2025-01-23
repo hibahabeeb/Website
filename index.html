@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiba Habeeb | Portfolio</title>
     <style>
-        /* Resetting default margin and padding */
+        /* Global Style Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,42 +14,39 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #6a82fb, #fc5c7d);
-            color: #fff;
+            background-color: #fdfdfd;
+            color: #333;
             line-height: 1.8;
-            padding: 0;
-            margin: 0;
         }
 
         /* Header Section */
         header {
-            background: rgba(0, 0, 0, 0.6);
             text-align: center;
             padding: 80px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
             position: relative;
             overflow: hidden;
-            border-bottom: 2px solid #ffffff33;
-            animation: fadeInUp 1.5s ease-out;
         }
 
         header h1 {
             font-size: 3rem;
-            margin-bottom: 15px;
-            color: #fff;
+            color: #333;
             font-weight: bold;
-            animation: slideIn 1s ease-out;
+            margin-bottom: 15px;
+            animation: fadeInDown 1.5s ease-out;
         }
 
         header p {
             font-size: 1.2rem;
-            color: #e0e0e0;
-            animation: fadeInUp 2s ease-out;
+            color: #555;
+            animation: fadeIn 2s ease-out;
         }
 
-        @keyframes fadeInUp {
+        @keyframes fadeInDown {
             0% {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(-20px);
             }
             100% {
                 opacity: 1;
@@ -57,170 +54,136 @@
             }
         }
 
-        @keyframes slideIn {
+        @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: translateX(-50px);
             }
             100% {
                 opacity: 1;
-                transform: translateX(0);
             }
+        }
+
+        /* Section Title */
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: #6a82fb;
+            display: block;
+            margin: 10px auto 20px;
         }
 
         /* About Section */
         section.about {
-            background-color: #ffffff22;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            border-bottom: 2px solid #ffffff33;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        section.about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 25px;
-            color: #fff;
-            font-weight: bold;
         }
 
         section.about p {
             font-size: 1.1rem;
-            color: #ddd;
-            max-width: 900px;
+            color: #666;
+            max-width: 800px;
             margin: 0 auto;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
         /* Skills Section */
         section.skills {
-            background: linear-gradient(135deg, #6a82fb, #fc5c7d);
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        section.skills h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
         }
 
         .skills-list {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 20px;
-            flex-wrap: wrap;
-            animation: fadeInUp 1.2s ease-out;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .skill {
-            background-color: #3a4c81;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            padding: 15px 10px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #555;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skill:hover {
-            transform: translateY(-5px);
-            background-color: #fc5c7d;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
         /* Experience Section */
         section.experience {
-            padding: 80px 20px;
-            background-color: #333;
-            text-align: center;
-            color: #fff;
-            animation: fadeInUp 1.5s ease-out;
-        }
-
-        section.experience h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            font-weight: bold;
+            padding: 60px 20px;
         }
 
         section.experience ul {
             list-style: none;
-            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         section.experience ul li {
             margin-bottom: 15px;
-            padding-left: 20px;
+            font-size: 1rem;
+            color: #555;
             position: relative;
+            padding-left: 25px;
         }
 
         section.experience ul li::before {
-            content: '•';
+            content: '✔';
+            color: #6a82fb;
             position: absolute;
             left: 0;
-            font-size: 1.5rem;
-            color: #fc5c7d;
-        }
-
-        section.experience ul li:hover {
-            color: #fc5c7d;
-            transform: translateX(10px);
-        }
-
-        /* Hackathon Section */
-        section.hackathon {
-            background-color: #3a4c81;
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-            animation: fadeInUp 1.5s ease-out;
-        }
-
-        section.hackathon h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
+            font-size: 1.2rem;
         }
 
         /* Contact Section */
         section.contact {
-            background-color: #6a82fb;
-            color: #fff;
-            padding: 80px 20px;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
             text-align: center;
-            animation: fadeInUp 1.5s ease-out;
         }
 
-        section.contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+        section.contact .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
-        .contact-info {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .contact-info a {
-            color: #fc5c7d;
+        section.contact .contact-info a {
+            color: #6a82fb;
             text-decoration: none;
-            font-weight: bold;
             transition: color 0.3s ease;
         }
 
-        .contact-info a:hover {
-            color: #fff;
+        section.contact .contact-info a:hover {
+            color: #333;
         }
 
-        /* Footer Section */
+        /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
             padding: 20px;
+            background-color: #333;
+            color: #fff;
         }
 
         footer p {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         /* Mobile Responsiveness */
@@ -229,16 +192,7 @@
                 font-size: 2.5rem;
             }
 
-            section.about p, section.experience ul li {
-                font-size: 1rem;
-            }
-
-            .skills-list {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-info {
+            section.about p {
                 font-size: 1rem;
             }
         }
@@ -249,14 +203,14 @@
     <!-- Header Section -->
     <header>
         <h1>Hiba Habeeb</h1>
-        <p>Aspiring Psychologist | Passionate About Videography & Video Editing</p>
+        <p>Psychology Student | Passionate About Videography</p>
     </header>
 
     <!-- About Section -->
     <section class="about">
         <h2>About Me</h2>
         <p>
-            I am Hiba Habeeb, an aspiring psychologist currently pursuing my BSc in Psychology at Malabar College of Advanced Studies, Vengara. With a deep passion for videography and video editing, I am eager to explore and develop new skills. I am always keen to learn and delve into uncharted territories.
+            I am Hiba Habeeb, an aspiring psychologist and a creative mind passionate about videography and video editing. Currently pursuing my BSc in Psychology, I am always eager to grow and explore new dimensions in my field and beyond.
         </p>
     </section>
 
@@ -276,22 +230,24 @@
     <section class="experience">
         <h2>Experience</h2>
         <ul>
-            <li>Pursuing a degree in BSc Psychology at Malabar College of Advanced Studies.</li>
-            <li>Developing skills in videography and video editing through personal projects and learning.</li>
-            <li>Exploring innovative ways to merge psychology with creative fields like videography.</li>
+            <li>Currently pursuing BSc in Psychology.</li>
+            <li>Hands-on experience in video editing and creative projects.</li>
+            <li>Actively combining psychological insights with creative endeavors.</li>
         </ul>
-    </section>
-
-    <!-- Hackathon Section -->
-    <section class="hackathon">
-        <h2>Hackathons & Events</h2>
-        <p>I am currently exploring new challenges, including hackathons and collaborations, to further develop my creative and technical skills.</p>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
-        <h2>Meet Me</h2>
+        <h2>Contact Me</h2>
         <div class="contact-info">
-            <p>LinkedIn: <a href="https://in.linkedin.com/in/hiba-habeeb-av-a24649348" target="_blank">Check out Hiba Habeeb AV's profile on LinkedIn</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/hiba_habeeb_av/" target="_blank">Check out Hiba Habeeb AV's profile on Instagram</a></p>
-        </
+            <p>LinkedIn: <a href="https://in.linkedin.com/in/hiba-habeeb-av-a24649348" target="_blank">Hiba Habeeb AV</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/hiba_habeeb_av/" target="_blank">@hiba_habeeb_av</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Hiba Habeeb. All rights reserved.</p>
+    </footer>
+</body>
+</html>
