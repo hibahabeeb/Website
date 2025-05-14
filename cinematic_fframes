@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Fframes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section with Logo -->
+  <header class="header">
+    <img src="assets/logo.jpg" alt="Cinematic Fframes Logo" class="logo">
+    <h1>Cinematic Fframes</h1>
+    <p>Capturing Moments. Creating Stories.</p>
+  </header>
+
+  <!-- Viral Videos Section -->
+  <section class="videos">
+    <h2>Viral Videos</h2>
+    <video controls src="https://www.instagram.com/reel/DEujidAtEz9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></video>
+    <video controls src="https://www.instagram.com/reel/DId9GcsTrE3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="></video>
+    <!-- Add more videos as needed -->
+  </section>
+  <!-- Photo Gallery Section -->
+  <section class="gallery">
+    <h2>Top Photos</h2>
+    <div class="photos">
+      <img src="https://www.instagram.com/p/DEtcHC-vpuI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" alt="Photo 1">
+      <img src="https://www.instagram.com/p/DJAEZTrTDQ4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" alt="Photo 2">
+      <img src="https://www.instagram.com/p/DF4i1yNPgN_/?utm_source=ig_web_copy_link" alt="Photo 3">
+      <!-- Add more photos as needed -->
+    </div>
+  </section>
+
+  <!-- Social Media Links -->
+  <footer class="socials">
+    <h3>Follow Me</h3>
+    <a href="https://www.instagram.com/cinematic_fframes/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
+    <a href="https://youtube.com/your_youtube" target="_blank">YouTube</a>
+    <!-- Add more links if needed -->
+  </footer>
+
+</body>
+</html>
